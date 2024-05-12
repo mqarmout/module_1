@@ -13,8 +13,7 @@ def get_page():
 	global url
 	
 	# Code here - Ask the user to input "Enter url of a medium article: " and collect it in url
-	# url = input("please provide the the URL of a medium article for scrapping: ")
-	url = "https://medium.com/@subashgandyer/papa-what-is-a-neural-network-c5e5cc427c7"
+	url = input("please provide the the URL of a medium article for scrapping: ")
 	# Code ends here
 	
 	# handling possible error
@@ -61,10 +60,7 @@ def collect_text(soup):
 
 # function to save file in the current directory
 def save_file(text):
-	# if not os.path.exists('./scraped_articles'):
-	# 	os.mkdir('./scraped_articles')
 	name = url.split("/")[-1]
-	# print(name)
 	fname = f'{name}.txt'
 	
 	# Code here - write a file using with (2 lines)
