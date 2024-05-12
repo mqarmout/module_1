@@ -1,17 +1,8 @@
 url: https://medium.com/@subashgandyer/papa-what-is-a-neural-network-c5e5cc427c7
 
-
-
-
-
 Subash Gandyer
 
-
---
-
 1
-
-
 
 It was a cozy Sunday afternoon in the month of February 2018. I just finished my huge customary Sunday lunch spread with family and resting along. Everyone in the family was taking a quick nap for a pre-planned evening outing. Well not everyone, actually.
 
@@ -137,10 +128,4 @@ Me: Brilliant job baby. Come, let’s go, and get some ice creams for my lovely an
 
 Phew! That was a challenging and a learning experience for me as well. That was how I ended my Sunday afternoon with my brilliant daughter who can teach other kids what a Meural Metark is. And I hope she will not come to me running asking “Papa, what is Meural Metark?” again. And I have a strong feeling; she would ask me another stunning question sooner or later. Fingers crossed and I am prepared to take up the challenges coming my way in the future.
 
---
-
---
-
 1
-
-CS Teacher to ...

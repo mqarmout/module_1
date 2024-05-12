@@ -37,11 +37,13 @@ def get_page():
 # function to remove all the html tags and replace some with specific strings
 def clean(text):
     rep = {"<br>": "\n", "<br/>": "\n", "<li>":  "\n",
-		   "Sign up\n": "", "Sign in\n": "", "Listen\n": "",
-		   "Share\n": "", "Follow\n": "", "Help\n": "",
-		   "Status\n": "", "About\n": "", "Careers\n": "",
-		   "Blog\n": "", "Privacy\n": "", "Blog\n": "",
-		   "Terms\n": "", "Text to speech\n": "", "Teams\n": ""}
+		   "\nSign up\n": "", "\nSign in\n": "", "\nListen\n": "",
+		   "\nShare\n": "", "\nFollow\n": "", "\nHelp\n": "",
+		   "\nStatus\n": "", "\nAbout\n": "", "\nCareers\n": "",
+		   "\nBlog\n": "", "\nPrivacy\n": "", "\nBlog\n": "",
+		   "\nTerms\n": "", "\nText to speech\n": "",
+		   "\nTeams\n": "", "\nCS Teacher to ...\n": "",
+		   "\n--\n": ""}
     rep = dict((re.escape(k), v) for k, v in rep.items()) 
     pattern = re.compile("|".join(rep.keys()))
     text = pattern.sub(lambda m: rep[re.escape(m.group(0))], text)
@@ -62,7 +64,7 @@ def save_file(text):
 	# if not os.path.exists('./scraped_articles'):
 	# 	os.mkdir('./scraped_articles')
 	name = url.split("/")[-1]
-	print(name)
+	# print(name)
 	fname = f'{name}.txt'
 	
 	# Code here - write a file using with (2 lines)
