@@ -1,6 +1,8 @@
 # Python script to scrape an article given the url of the article and store the extracted text in a file
 # Url: https://medium.com/@subashgandyer/papa-what-is-a-neural-network-c5e5cc427c7
 
+# Modified by Younes your collaborator
+
 import os
 import requests
 import re
@@ -48,7 +50,6 @@ def clean(text):
     text = pattern.sub(lambda m: rep[re.escape(m.group(0))], text)
     text = re.sub('\<(.*?)\>', '', text)
     return text.strip()
-
 
 def collect_text(soup):
 	text = f'url: {url}\n\n'
